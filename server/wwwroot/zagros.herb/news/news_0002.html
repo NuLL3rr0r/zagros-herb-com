@@ -1,0 +1,90 @@
+﻿<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+#floater {
+	POSITION: absolute;
+	VISIBILITY: visible;
+	Z-INDEX: 10; 
+	TOP: px;
+	Right: px
+	WIDTH: px;
+}
+</style> 
+<script language="JavaScript1.2">
+document.onmousedown=click
+function click()
+{
+	if ((event.button==2) || (event.button==3))
+	{
+		if (document.all)
+		{
+			top.window.resizeTo(0,0);
+		}
+		else if (document.layers||document.getElementById)
+		{
+			if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth)
+			{
+				top.window.outerHeight = 0;
+				top.window.outerWidth = 0;
+			}
+		}
+		alert('right click was disabled...');
+		window.close();
+	}
+}
+</script>
+<title>خبر</title>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<style type="text/css"> 
+BODY { BACKGROUND-POSITION: center center; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../bckgrnd.png); BACKGROUND-REPEAT: no-repeat } .style1 {font-family: Tahoma}
+</style>
+</head>
+
+<body onkeypress="if (window.event.keyCode == 27) window.close()">
+<script src="../banner.js"></script>
+<div id="floater" style="top: px; width: 154px; height: 513px;" align="right">
+  <table width="300" height="70" border="0">
+    <tr>
+      <td align="center" valign="middle" bgcolor="#563382" class="style1"><span class="style2"><font face="Tahoma" color="#E9EB52">موسسه گياهان داروئي زاگرس</font></span></td>
+    </tr>
+  </table>
+</div>
+<font face="Tahoma">
+<center>
+  <table width="95%"  border="0">
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><p align="center" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><strong>اطلاعات مدوني در خصوص داروهاي گياهي وجود ندارد </strong></p>
+        <p align="justify" class="style1">معاون پژوهشي و آموزشي پژوهشكده گياهان دارويي جهاد دانشگاهي گفت: متأسفانه در سيستم پزشكي ما اطلاعات كامل و مدوني در خصوص داروهاي گياهي وجود ندارد، حتي ممكن است برخي از پزشكان نتوانند مشاوره خوبي در اين زمينه به مردم بدهند.صغري جاروندي ضمن اعلام اين مطلب افزود: مصرف مردم از داروهاي گياهي معمولا بر اساس خود درماني يا مشاوره افراد ديگري همچون عطاريها و خارج از سيستم پزشكي است.جاروندي با اشاره به ضعف آموزش سيستم پزشكي در خصوص آشنايي با داروهاي گياهي گفت: پزشكان كشور در دوران تحصيل با داروهاي رايج (شيميايي) آشنا مي‌شوند، ولي با داروهاي گياهي نه؛ و اين مي‌طلبد كه در دوره‌اي آموزشي پزشكان آشنايي با داروهاي گياهي نيز در دوران تحصيل آنان گنجانده شود.وي قرار نگرفتن داروهاي گياهي تحت نظام بيمه‌اي كشور را از ديگر مشكلات اين داروها ذكر كرد و افزود: پزشك براي درمان به عواملي همچون قيمت دارو و شرايط بيمار توجه مي‌كند و وقتي مي‌تواند با دارويي كه بعلت قرار گرفتن در نظام بيمه‌اي قيمت كمتري دارد بيمار را درمان كند، تجويز داروي گياهي كه به علت قرار نگرفتن تحت نظام بيمه‌اي گران‌تر است، صحيح نيست.جاروندي با بيان اينكه داروهاي گياهي بنام داروهاي بي خطر در بين مردم مشهورند، گفت: استفاده همزمان اين داروها با داروهاي شيميايي در برخي مواقع خطرزاست، همچنين، بايد زمان و مقدار صحيح مصرف با اطلاع رساني صحيح آموزش داده شود.</p>
+        <p align="justify" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><font face="Tahoma"><a href="../news.html"><em><strong>بازگشت به صفحه ي خبر </strong></em></a></font></p>
+        <p align="justify" class="style1">&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+  </table>
+
+</center>
+</body>
+</font>
+</html>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zagros.herb", "http://localhost/zagros.herb/zagros.herb.csproj", "{650B063A-DAD4-4C45-9BC1-CB4337962F50}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{650B063A-DAD4-4C45-9BC1-CB4337962F50}.Debug.ActiveCfg = Debug|.NET
+		{650B063A-DAD4-4C45-9BC1-CB4337962F50}.Debug.Build.0 = Debug|.NET
+		{650B063A-DAD4-4C45-9BC1-CB4337962F50}.Release.ActiveCfg = Release|.NET
+		{650B063A-DAD4-4C45-9BC1-CB4337962F50}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

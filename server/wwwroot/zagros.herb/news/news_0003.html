@@ -1,0 +1,90 @@
+﻿<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+#floater {
+	POSITION: absolute;
+	VISIBILITY: visible;
+	Z-INDEX: 10; 
+	TOP: px;
+	Right: px
+	WIDTH: px;
+}
+</style> 
+<script language="JavaScript1.2">
+document.onmousedown=click
+function click()
+{
+	if ((event.button==2) || (event.button==3))
+	{
+		if (document.all)
+		{
+			top.window.resizeTo(0,0);
+		}
+		else if (document.layers||document.getElementById)
+		{
+			if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth)
+			{
+				top.window.outerHeight = 0;
+				top.window.outerWidth = 0;
+			}
+		}
+		alert('right click was disabled...');
+		window.close();
+	}
+}
+</script>
+<title>خبر</title>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<style type="text/css"> 
+BODY { BACKGROUND-POSITION: center center; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../bckgrnd.png); BACKGROUND-REPEAT: no-repeat } .style1 {font-family: Tahoma}
+</style>
+</head>
+
+<body onkeypress="if (window.event.keyCode == 27) window.close()">
+<script src="../banner.js"></script>
+<div id="floater" style="top: px; width: 154px; height: 513px;" align="right">
+  <table width="300" height="70" border="0">
+    <tr>
+      <td align="center" valign="middle" bgcolor="#563382" class="style1"><span class="style2"><font face="Tahoma" color="#E9EB52">موسسه گياهان داروئي زاگرس</font></span></td>
+    </tr>
+  </table>
+</div>
+<font face="Tahoma">
+<center>
+  <table width="95%"  border="0">
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><p align="center" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><strong>پياز مانع رشد سلول هاى سرطانى مى شود</strong></p>
+        <p align="justify" class="style1"> يونايتدپرس : دانشمندان آمريكايى مى &nbsp; گويند پيازهاى با رايحه تند ممكن است به پيشگيرى از سرطان روده بزرگ و كبد كمك كنند.گروهى از پژوهشگران آمريكايى در دانشگاه كورنل در بررسى چندگونه پياز تند _ كه داراى بيشترين فعاليت ضداكسيداسيون هستند _ نشان دادند كه آنها مى &nbsp; توانند از رشد سلول &nbsp; هاى سرطانى كبد و روده بزرگ جلوگيرى كنند. به گفته دكتر «رويى &nbsp; هاى ليو» سرپرست اين تحقيق با توجه به تحقيق آنها پيازهاى تندتر نسبت به گونه &nbsp; هاى ملايم &nbsp; تر خواص مفيد بيشترى دارند. گرچه از قبل پژوهشگران مى &nbsp; دانسته &nbsp; اند كه پياز ممكن است براى كمك به مقابله با سرطان مفيد باشد. تحقيق اخير اولين موردى است كه توانايى &nbsp; هاى ضدسرطان گونه هاى معمول پياز را مورد مقايسه قرار مى &nbsp; دهد. </p>
+        <p align="justify" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><font face="Tahoma"><a href="../news.html"><em><strong>بازگشت به صفحه ي خبر </strong></em></a></font></p>
+        <p align="justify" class="style1">&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+  </table>
+
+</center>
+</body>
+</font>
+</html>

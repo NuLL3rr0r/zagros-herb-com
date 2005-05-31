@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="administration">
+        <s:complexType />
+      </s:element>
+      <s:element name="administrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="administrationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="users_list">
+        <s:complexType />
+      </s:element>
+      <s:element name="users_listResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="users_listResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="administrationSoapIn">
+    <wsdl:part name="parameters" element="tns:administration" />
+  </wsdl:message>
+  <wsdl:message name="administrationSoapOut">
+    <wsdl:part name="parameters" element="tns:administrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="users_listSoapIn">
+    <wsdl:part name="parameters" element="tns:users_list" />
+  </wsdl:message>
+  <wsdl:message name="users_listSoapOut">
+    <wsdl:part name="parameters" element="tns:users_listResponse" />
+  </wsdl:message>
+  <wsdl:portType name="zagrosSoap">
+    <wsdl:operation name="administration">
+      <wsdl:input message="tns:administrationSoapIn" />
+      <wsdl:output message="tns:administrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="users_list">
+      <wsdl:input message="tns:users_listSoapIn" />
+      <wsdl:output message="tns:users_listSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="zagrosSoap" type="tns:zagrosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="administration">
+      <soap:operation soapAction="http://tempuri.org/administration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="users_list">
+      <soap:operation soapAction="http://tempuri.org/users_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="zagros">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="zagrosSoap" binding="tns:zagrosSoap">
+      <soap:address location="http://www.zagros-herb.com/services.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

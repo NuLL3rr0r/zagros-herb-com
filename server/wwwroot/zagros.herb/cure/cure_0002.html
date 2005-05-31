@@ -1,0 +1,92 @@
+﻿<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+#floater {
+	POSITION: absolute;
+	VISIBILITY: visible;
+	Z-INDEX: 10; 
+	TOP: px;
+	Right: px
+	WIDTH: px;
+}
+</style> 
+<script language="JavaScript1.2">
+document.onmousedown=click
+function click()
+{
+	if ((event.button==2) || (event.button==3))
+	{
+		if (document.all)
+		{
+			top.window.resizeTo(0,0);
+		}
+		else if (document.layers||document.getElementById)
+		{
+			if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth)
+			{
+				top.window.outerHeight = 0;
+				top.window.outerWidth = 0;
+			}
+		}
+		alert('right click was disabled...');
+		window.close();
+	}
+}
+</script>
+<title>گياه درماني</title>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<style type="text/css"> 
+BODY { BACKGROUND-POSITION: center center; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../bckgrnd.png); BACKGROUND-REPEAT: no-repeat } .style1 {font-family: Tahoma}
+</style>
+</head>
+
+<body onkeypress="if (window.event.keyCode == 27) window.close()">
+<script src="../banner.js"></script>
+<div id="floater" style="top: px; width: 154px; height: 513px;" align="right">
+  <table width="300" height="70" border="0">
+    <tr>
+      <td align="center" valign="middle" bgcolor="#563382" class="style1"><span class="style2"><font face="Tahoma" color="#E9EB52">موسسه گياهان داروئي زاگرس</font></span></td>
+    </tr>
+  </table>
+</div>
+<font face="Tahoma">
+<center>
+  <table width="95%"  border="0">
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">	    <p align="center" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><strong>گياهان دارويي ( طب سنتي )</strong></p>
+        <p align="justify" class="style1"> طبيعت بهترين پزشك است و بشر با بهره گيري از طبيعت مي تواند به درمان قطعي بيماريهاي خويش اقدام ورزد . اگر بدانيم كه چگونه و به چه ميزاني از داروهاي گياهي استفاده كنيم آنگاه مي توانيم از گياهان بطور مكرر در جهت درمان بيماريها استفاده كنيم. هر چند كه 30% از داروهايي كه در دنيا ساخته مي شود &nbsp; از گياهان دارويي &nbsp; تهيه مي شود ولي از آنجائيكه &nbsp; در گياهان دارويي ، تركيبات شيميايي &nbsp; مصنوعي اضافه نشده است فاقد عوارض شيميايي بوده &nbsp; و بهتر &nbsp; و سريعتر به درمان بيماريها دست مي يابيم . &nbsp; در دنيا بيش از صدها هزار گياه دارويي وجود دارد &nbsp; ولي تكنولوژي استفاده از همه آنها در جهت درمان و پيشگيري از بيماريها كامل نشده &nbsp; و &nbsp; يا &nbsp; اينكه &nbsp; هنوز دانش بشري &nbsp; قادر به كشف &nbsp; همه خواص گياهان نشده است . </p>
+        <p align="justify" class="style1"> &nbsp; انسان خاكي از تاريخ پيدايش &nbsp; خود از گياهان داروئي استفاده و اطباء و دانشمندان &nbsp; يونان و مصر و ايران از هزاران سال پيش به خواص داروهاي گياهي پي برده بودند &nbsp; و از آن بهره جوئي &nbsp; مي كردند . </p>
+      <p align="justify" class="style1"> هم اكنون نيز در داروخانه هاي سراسر كشور در جوار داروهاي شيميايي ، داروهاي گياهي نيز يافت مي شود . سعي ما براين است تا شما را با انواع گياهان داروئي و خواص آنها آشنا سازيم. </p>
+      <p align="justify" class="style1">&nbsp;</p>
+      <p align="center" class="style1"><font face="Tahoma"><a href="../cure.html"><em><strong>بازگشت به صفحه ي گياه درماني </strong></em></a></font></p>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+  </table>
+
+</center>
+</body>
+</font>
+</html>

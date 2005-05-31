@@ -1,0 +1,94 @@
+﻿<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+#floater {
+	POSITION: absolute;
+	VISIBILITY: visible;
+	Z-INDEX: 10; 
+	TOP: px;
+	Right: px
+	WIDTH: px;
+}
+</style> 
+<script language="JavaScript1.2">
+document.onmousedown=click
+function click()
+{
+	if ((event.button==2) || (event.button==3))
+	{
+		if (document.all)
+		{
+			top.window.resizeTo(0,0);
+		}
+		else if (document.layers||document.getElementById)
+		{
+			if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth)
+			{
+				top.window.outerHeight = 0;
+				top.window.outerWidth = 0;
+			}
+		}
+		alert('right click was disabled...');
+		window.close();
+	}
+}
+</script>
+<title>خبر</title>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<style type="text/css"> 
+BODY { BACKGROUND-POSITION: center center; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../bckgrnd.png); BACKGROUND-REPEAT: no-repeat } .style1 {font-family: Tahoma}
+</style>
+</head>
+
+<body onkeypress="if (window.event.keyCode == 27) window.close()">
+<script src="../banner.js"></script>
+<div id="floater" style="top: px; width: 154px; height: 513px;" align="right">
+  <table width="300" height="70" border="0">
+    <tr>
+      <td align="center" valign="middle" bgcolor="#563382" class="style1"><span class="style2"><font face="Tahoma" color="#E9EB52">موسسه گياهان داروئي زاگرس</font></span></td>
+    </tr>
+  </table>
+</div>
+<font face="Tahoma">
+<center>
+  <table width="95%"  border="0">
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><p align="center" class="style1">&nbsp;</p>
+        <p align="center" class="style1"><strong>شبكه ملي واحدهاي پژوهشي گياهان دارويي تشكيل شد </strong></p>
+        <p align="justify" class="style1"> خبرگزاري كار ايران </p>
+        <p align="justify" class="style1"> مراسم انتخابات شوراي شبكه ملي گياهان دارويي كشور در جلسه‌‏اي كه به همين منظور در مركز تحقيقات گياهان دارويي دانشگاه شاهد برگزار شده بود, انجام شد. </p>
+        <p align="justify" class="style1"> به گزارش ايلنا، در اين مراسم كه با حضور دكتر منصوري، معاون پژوهشي وزارت علوم, تحقيقات و فناوري و رييس دانشگاه شاهد و همچنين با شركت روساي واحدهاي پژوهشي داراي مجوز در زمينه گياهان دارويي تشكيل شده بود، معاون پژوهشي وزارت علوم نقش شبكه‌‏ها را در اطلاع رساني و تصميم سازي و ارائه راهكارهاي مناسب براي ساماندهي پژوهش و همچنين آينده نگري در سياست‌‏هاي علمي پژوهشي بسيار تعيين كننده دانست. </p>
+        <p align="justify" class="style1"> در اين جلسه از بين 11 مركز پژوهشي, 5 مركز، پژوهشكده گياهان دارويي جهاد دانشگاهي, موسسه تحقيقات جنگل ها و مراتع، مركز تحقيقات گياهان دارويي دانشگاه شاهد، پژهشكده گياهان دارويي دانشگاه شهيد بهشتي، پژوهشگاه ملي مهندسي ژنتيك و زيست فناوري به عنوان اعضاي حقوقي شوراي شبكه تعيين شدند. </p>
+        <p align="justify" class="style1"> معاونت پژوهشي وزارت علوم, تحقيقات و فناوري در صورت موفقيت فعاليت‌‏هاي اين شبكه, شبكه‌‏هاي ديگري را نيز در موضوعات مورد نياز شكل خواهد داد. </p>
+        <p align="center" class="style1">&nbsp; </p>
+        <p align="center" class="style1"><font face="Tahoma"><a href="../news.html"><em><strong>بازگشت به صفحه ي خبر </strong></em></a></font></p>
+      <p align="justify" class="style1">&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img src="../spacer.gif" width="537" height="26"></td>
+    </tr>
+  </table>
+
+</center>
+</body>
+</font>
+</html>
